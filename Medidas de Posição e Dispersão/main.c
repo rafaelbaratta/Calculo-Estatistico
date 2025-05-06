@@ -96,13 +96,13 @@ int main() {
 				continuar = '\0';
 			}
 			else {
+				continuar = toupper(continuar);
 				if (continuar != 'S' && continuar != 'N') {
 					printf("\nResponda \'S\' para SIM e \'N\' para NÃO: ");
 				}
 			}
 
 			setbuf(stdin, NULL);
-			continuar = toupper(continuar);
 
 		} while (continuar != 'S' && continuar != 'N');
 
